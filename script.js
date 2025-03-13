@@ -77,4 +77,5 @@ function closeLightBox() {
     }
 }
 
-lightBoxContainer.addEventListener("click", closeLightBox);
+// lightBoxContainer.addEventListener("click", closeLightBox);
+lightBoxContent.addEventListener("click", closeLightBox);
