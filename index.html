@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="header">
+        <h1><span>Wild</span> Life <span>Photo</span> Gallery</h1>
+    </div>
+
+    <hr>
+
     <div class="gallery-container">
+        <!-- data index needed for lightbox creation -->
         <div class="gallery-item" data-index="0"><img src="./assets/images/dolphins.jpg" alt=""></div>
         <div class="gallery-item" data-index="1"><img src="./assets/images/elephant.jpg" alt=""></div>
         <div class="gallery-item" data-index="2"><img src="./assets/images/giraffes.jpg" alt=""></div>
@@ -20,7 +27,14 @@
         <div class="gallery-item" data-index="8"><img src="./assets/images/reindeer.jpg" alt=""></div>
         <div class="gallery-item" data-index="9"><img src="./assets/images/zebra.jpg" alt=""></div>
     </div>
+
+    <hr>
+
+    <footer>
+        <p>© Kamogelo-Tshepo Malema. All rights reserved.</p>
+    </footer>
     
+    <!-- defer: js should only run after all html has been loaded -->
     <script src="./script.js" defer></script>
 </body>
 </html>

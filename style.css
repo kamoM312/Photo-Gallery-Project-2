@@ -1,5 +1,20 @@
 body {
-    background-color: white;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+
+.header h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.header h1 span {
+    font-weight: bold;
+    color: green;
 }
 
 .gallery-container {
@@ -8,12 +23,15 @@ body {
     flex-wrap: wrap;
     width: 90%;
     padding: 2rem;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .gallery-item {
+    display: flex;
     flex-basis: 30%;
     margin: 0.5rem;
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 .gallery-item:hover {
@@ -26,12 +44,14 @@ body {
 .gallery-item img {
     width: 100%;
     height: 100%;
+    /* maintain image shape */
     object-fit: cover;
 }
 
 .lightbox {
+    /* lightbox should always remain in the same position on display window */
     position: fixed;
-    background-color: rgba(60, 60, 60, 0.5);
+    background-color: rgba(60, 60, 60, 0.7);
     top: 0;
     left: 0;
     width: 100%;
@@ -39,8 +59,13 @@ body {
     /* create scrollbar for image */
     overflow: auto;
     display: none;
-    
+    /* grid styling */
     place-items: center;
+    align-items: center;
+    place-content: center;
+    align-content: stretch;
+    justify-items: center;
+    justify-content: center;
 }
 
 .lightbox-content {
@@ -87,4 +112,10 @@ body {
 
 .fa-angle-right {
     font-size: 5rem;
+}
+
+footer p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
