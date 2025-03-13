@@ -10,6 +10,7 @@ lightBoxContainer.classList.add("lightbox");
 lightBoxContent.classList.add("lightbox-content");
 lightBoxPrev.classList.add("fas", "fa-angle-left", "lightbox-prev");
 lightBoxNext.classList.add("fas", "fa-angle-right","lightbox-next");
+lightBoxImg.classList.add("lightbox-img")
 
 lightBoxContainer.appendChild(lightBoxContent);
 lightBoxContainer.appendChild(lightBoxImg);
@@ -36,7 +37,7 @@ function showLightBox(n) {
 }
 
 function currentImage() {
-    lightBoxContainer.style.display = "block";
+    lightBoxContainer.style.display = "grid";
     let imageIndex = parseInt(this.getAttribute("data-index"));
     showLightBox(index = imageIndex);
 }
